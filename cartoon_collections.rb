@@ -17,8 +17,8 @@ def find_the_cheese(array)
   for i in 0..2 do
     if array.include?(cheese_types[i])
        return cheese_types[i]
-       i += 1
     end
-    nil
+    i += 1
   end
+  nil
 end
