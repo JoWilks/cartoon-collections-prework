@@ -13,12 +13,12 @@ end
 def find_the_cheese(array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  i = 0
-  for i in 0..2 do
-    if array.include?(cheese_types[i])
-       return cheese_types[i]
+
+  cheese_types.each do |cheese|
+    if array.include?(cheese) == true
+      return cheese
+    else
+      nil
     end
-    i += 1
   end
-  nil
 end
